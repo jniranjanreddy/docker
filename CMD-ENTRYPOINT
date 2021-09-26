@@ -1,0 +1,13 @@
+FROM alpine
+ENTRYPOINT [ "ping" ]
+CMD ["Rama"]
+
+# Overiding CMD.
+    #ENTRYPOINT [ "echo" ]
+    #CMD ["SIta", "Rama"]
+# docker run --name test01 -it test01 "Laxmana Hanuma"
+
+#Overiding ENTRYPOINT.
+    #ENTRYPOINT [ "echo" ]
+    #CMD ["SIta", "Rama"]
+# docker run --name test01 -it test01 "Laxmana Hanuma"
