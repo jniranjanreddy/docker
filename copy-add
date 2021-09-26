@@ -1,0 +1,20 @@
+FROM alpine
+ADD Cadvisor / 
+COPY dockerCLI /
+COPY test.sh /
+#ADD
+ADD tarme.tar.gz /
+ADD  https://raw.githubusercontent.com/jniranjanreddy/kubernetes/main/metallb/metallb.yaml /
+
+#Copy
+COPY tarme.tar.gz /tmp
+
+# Environment Variables
+ENV Department=development
+ENV PATH=/usr/local/postgres:$PATH
+RUN export Tenant=iag \
+    && echo $HOSTNAME > /container-test \
+    && echo $USERNAME >> /container-test
+RUN echo "First Line" > container-test && echo "Second Line" >> /container-test
+EXPOSE 8080
+CMD ["ping", "localhost"]
