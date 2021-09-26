@@ -11,3 +11,11 @@ CMD ["Rama"]
     #ENTRYPOINT [ "echo" ]
     #CMD ["SIta", "Rama"]
 # docker run --name test01 -it test01 "Laxmana Hanuma"
+
+#Overiding ENTRYPOINT and CMD.
+    #ENTRYPOINT [ "echo" ]
+    #CMD ["SIta", "Rama"]
+# #Overiding ENTRYPOINT.
+    #ENTRYPOINT [ "echo" ]
+    #CMD ["SIta", "Rama"]
+# docker run --name test01 -it  --entrypoint=sleep test01 10
