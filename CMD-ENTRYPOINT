@@ -1,5 +1,5 @@
 FROM alpine
-ENTRYPOINT [ "ping" ]
+ENTRYPOINT [ "echo" ]
 CMD ["Rama"]
 
 # Overiding CMD.
@@ -10,7 +10,7 @@ CMD ["Rama"]
 #Overiding ENTRYPOINT.
     #ENTRYPOINT [ "echo" ]
     #CMD ["SIta", "Rama"]
-# docker run --name test01 -it test01 "Laxmana Hanuma"
+# docker run --name test01 -it --entrypoint=sleep
 
 #Overiding ENTRYPOINT and CMD.
     #ENTRYPOINT [ "echo" ]
