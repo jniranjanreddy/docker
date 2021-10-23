@@ -10,7 +10,7 @@ Storage Drivers..
 # /var/lib/docker
   AUFS - Storage Driver
   Containers - It stors container related file
-  Volumes - It Stores Volume related files.
+  Volumes - It Stores Container created Volume files.
   Images - It storage image related files
  
  
@@ -45,4 +45,10 @@ docker run -d \
   $ docker run -d \
   --name devtest \
   -v myvol2:/app \
+  nginx:latest
+
+#mounting an external volume, The latest method
+docker run -d \
+  --name devtest \
+  --mount type=bind,source=/myvol2,target=/app \
   nginx:latest
