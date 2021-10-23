@@ -16,18 +16,18 @@ Storage Drivers..
  
 
 #Create a docker volumne
-$ docker volume create my-vol
+$ docker volume create myvol-01
 
 #$ docker volume ls
-local               my-vol
+local               myvol-01
 
 #Inspect a volume
-$ docker volume inspect my-vol
+$ docker volume inspect myvol-01
 [
     {
         "Driver": "local",
         "Labels": {},
-        "Mountpoint": "/var/lib/docker/volumes/my-vol/_data",
+        "Mountpoint": "/var/lib/docker/volumes/myvol-01/_data",
         "Name": "my-vol",
         "Options": {},
         "Scope": "local"
@@ -37,18 +37,18 @@ $ docker volume inspect my-vol
 #Mounting a volume to conatiner
 docker run -d \
   --name devtest \
-  --mount source=myvol2,target=/app \
+  --mount source=myvol-01,target=/app \
   nginx:latest
   
   --->>------
   "using -v option"
   $ docker run -d \
   --name devtest \
-  -v myvol2:/app \
+  -v myvol-01:/app \
   nginx:latest
 
 #mounting an external volume, The latest method
 docker run -d \
   --name devtest \
-  --mount type=bind,source=/myvol2,target=/app \
+  --mount type=bind,source=/myvol-01,target=/app \
   nginx:latest
