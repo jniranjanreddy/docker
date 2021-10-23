@@ -1,3 +1,20 @@
+Storage Drivers..
+ 1. AUFS - ubuntu
+ 2. ZFS
+ 3. BTRFS
+ 4. Device Mapper - Centos OR Redhat
+ 5. OverLay
+ 6. Ovarlay2
+ 
+ 
+# /var/lib/docker
+  AUFS - Storage Driver
+  Containers - It stors container related file
+  Volumes - It Stores Volume related files.
+  Images - It storage image related files
+ 
+ 
+
 #Create a docker volumne
 $ docker volume create my-vol
 
