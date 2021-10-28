@@ -20,3 +20,5 @@ ADD - add recommended only below conditions
   
   CMD: 
      The CMD specifies arguments that will be fed to the ENTRYPOINT
+     =====================================================
+   docker run -d --name test01 --cpu-shares 512 schoolofdevops/stress --cpu 1
