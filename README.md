@@ -22,3 +22,9 @@ ADD - add recommended only below conditions
      The CMD specifies arguments that will be fed to the ENTRYPOINT
      =====================================================
    docker run -d --name test01 --cpu-shares 512 schoolofdevops/stress --cpu 1
+   
+   ```
+   Linking Containers
+   docker run -itd --name redis redis:alpine
+   docker run -itd -P --name vote --link redis:redis -P schoolofdevops/vote
+   ```
