@@ -1,0 +1,13 @@
+vote:
+  image: schoolofdevops/vote
+  links: 
+    - redis:redis
+  ports: 
+    - 5000:80
+redis: 
+  image: redis:alpine
+
+worker: 
+  image: schoolofdevops/vote-worker
+  links: 
+    - redis:redis
