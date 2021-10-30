@@ -28,3 +28,20 @@ ADD - add recommended only below conditions
    docker run -itd --name redis redis:alpine
    docker run -itd -P --name vote --link redis:redis -P schoolofdevops/vote
    ```
+Multistage Builds..
+```
+FROM schoolofdevops/maven:spring AS build
+WORKDIR /app
+COPY . .
+RUN mvn package -Dmaven.test.skip
+#RUN mvn package -DskipTests
+
+FROM openjdk:8-alpine AS run
+COPY --from=build /app/target/spring-petclinic-1.5.2.jar /run/petclinic.jar
+EXPOSE 8080
+CMD java -jar /run/petclinic.jar
+```
+A specific build from a multistage build..
+```
+
+```
