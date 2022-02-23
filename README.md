@@ -43,5 +43,3 @@ CMD java -jar /run/petclinic.jar
 ```
 A specific build from a multistage build..
 ```
-
-```
