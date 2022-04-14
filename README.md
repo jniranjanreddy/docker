@@ -14,7 +14,7 @@ ADD - add recommended only below conditions
 
   
   # What is difference between CMD and Entrypoint
-  
+  ```
   ENTRYPOINT: 
      The ENTRYPOINT specifies a command that will always be executed when the container starts.
   
@@ -22,7 +22,7 @@ ADD - add recommended only below conditions
      The CMD specifies arguments that will be fed to the ENTRYPOINT
      =====================================================
    docker run -d --name test01 --cpu-shares 512 schoolofdevops/stress --cpu 1
-   
+   ```
    ```
    Linking Containers
    docker run -itd --name redis redis:alpine
