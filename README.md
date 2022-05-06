@@ -1,4 +1,4 @@
-## Docker Images used
+## Docker best Practices
 | Development                     | Production                          |
 | ------------------------------- | --------------------------------------------- |
 |  Nginx  | nginx |
