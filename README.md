@@ -1,3 +1,11 @@
+## Development                               VS                                                Production
+Use bind mounts to give your container access to your source code.	                Use volumes to store container data.
+Use Docker Desktop for Mac or Docker Desktop for Windows.               
+
+
+
+
+
 # What is difference between COPY and ADD.
 According to the Dockerfile best practices guide, we should always prefer COPY over ADD unless we specifically need one of the two additional features of ADD.
 ```
@@ -43,3 +51,5 @@ CMD java -jar /run/petclinic.jar
 ```
 A specific build from a multistage build..
 ```
+
+
