@@ -3,7 +3,7 @@
 | ------------------------------- | --------------------------------------------- |
 | Use bind mounts to give your container access to your source code.  | Use volumes to store container data. |
 | Use Docker Desktop for Mac or Docker Desktop for Windows.  | Use Docker Engine, if possible with userns mapping for greater isolation of Docker processes from host processes. |
-| Simple SpringBoot HelloWorld | stacksimplify / dockerintro-springboot-helloworld-rest-api |
+| Don’t worry about time drift. | Always run an NTP client on the Docker host and within each container process and sync them all to the same NTP server. If you use swarm services, also ensure that each Docker node syncs its clocks to the same time source as the containers. |
 
 
 
