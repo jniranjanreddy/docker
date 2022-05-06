@@ -1,6 +1,9 @@
-## Development                               VS                                                Production
-Use bind mounts to give your container access to your source code.	                Use volumes to store container data.
-Use Docker Desktop for Mac or Docker Desktop for Windows.               
+## Docker Images used
+| Development                     | Production                          |
+| ------------------------------- | --------------------------------------------- |
+|  Nginx  | nginx |
+| Customized Nginx  | stacksimplify/mynginx_image1 |
+| Simple SpringBoot HelloWorld | stacksimplify / dockerintro-springboot-helloworld-rest-api |
 
 
 
