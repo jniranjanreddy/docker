@@ -49,7 +49,7 @@ ADD - add recommended only below conditions
    docker run -itd --name redis redis:alpine
    docker run -itd -P --name vote --link redis:redis -P schoolofdevops/vote
    ```
-Multistage Builds..
+Multistage Builds...
 ```
 FROM schoolofdevops/maven:spring AS build
 WORKDIR /app
