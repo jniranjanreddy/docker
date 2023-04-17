@@ -16,8 +16,34 @@ COPY ./index.html/ /usr/local/apache2/htdocs/
 
 docker build -t nirulabs/image .
 
+Ingress:
+========
+     foo-ingress-8080
+     bar-ingress-8081
 
+cafe.example.com
+     tea-ingress-8082
+     coffee-ingress-8083
+     juice-ingress-8084
 
+bar.example.com
+     beer-ingress-8085
+     wine-ingress-8086
+     cosmo-ingress-8087
+#######################################
+service:
+     foo-service-30001
+     bar-service-30002
+
+cafe.example.com
+     tea-service-30003
+     coffee-service-30004
+     juice-service-30005
+
+bar.example.com
+     beer-service-30006
+     wine-service-30007
+     cosmo-service-30008
 
 How to use .dockerignore its like .gitignore
 
