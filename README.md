@@ -6,6 +6,19 @@
 | Don’t worry about time drift. | Always run an NTP client on the Docker host and within each container process and sync them all to the same NTP server. If you use swarm services, also ensure that each Docker node syncs its clocks to the same time source as the containers. |
 
 ```
+Create custon docke file for home lab
+cat index.html
+<html><body><h1>It works!</h1></body></html>
+
+cat Dockerfile
+FROM httpd:2.4
+COPY ./index.html/ /usr/local/apache2/htdocs/
+
+docker build -t nirulabs/image .
+
+
+
+
 How to use .dockerignore its like .gitignore
 
 Let’s look at an example of .dockerignore file.
