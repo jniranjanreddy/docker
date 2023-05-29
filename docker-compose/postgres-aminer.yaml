@@ -3,7 +3,7 @@ version: '3.1'
 
 services:
 
-  db:
+  db1:
     image: postgres
     restart: always
     environment:
