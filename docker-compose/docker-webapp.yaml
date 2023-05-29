@@ -1,7 +1,0 @@
-services:
-  webapp:
-    image: nirulabs/tea
-    ports:
-      - "8000:80"
-    volumes:
-      - "/data"
