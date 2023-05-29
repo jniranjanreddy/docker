@@ -1,0 +1,12 @@
+services:
+  prod: 
+    command: hello.sh
+    env_file: env_vars
+    environment:
+      - USER=user1
+    hostname: "{{ENVIRONMENT}}"
+    image: nirulabs/tea
+    ports:
+      - "8000:80"
+    volumes:
+      - "/data"
