@@ -7,3 +7,7 @@ COPY docker-guide/dist/* /app/
 EXPOSE 80
 ENTRYPOINT ["dotnet", "/app/docker-guide.dll"]
 ```
+
+```
+docker run -it --rm -p 8090:80 --name aspnetcore_sample mcr.microsoft.com/dotnet/samples:aspnetapp
+```
