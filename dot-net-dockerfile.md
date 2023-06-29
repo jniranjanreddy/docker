@@ -62,6 +62,42 @@ az webapp deployment source config-zip \
     --src site.zip \
     --resource-group [sandbox resource group name] \
     --name <your-app-name>
+
+root@ubansinode1:~/first-web-app/pub# az webapp deployment source config-zip \
+>     --src site.zip \
+>     --resource-group learn-70a33bc5-e0b5-41a0-a930-d8261aba71ce \
+>     --name myapache
+Getting scm site credentials for zip deployment
+Starting zip deployment. This operation can take a while to complete ...
+Deployment endpoint responded with status code 202
+{
+  "active": true,
+  "author": "N/A",
+  "author_email": "N/A",
+  "build_summary": {
+    "errors": [],
+    "warnings": []
+  },
+  "complete": true,
+  "deployer": "Push-Deployer",
+  "end_time": "2023-06-29T16:26:45.6190606Z",
+  "id": "eb1c9dfb-5260-4e93-8551-0a7248b29b6e",
+  "is_readonly": true,
+  "is_temp": false,
+  "last_success_end_time": "2023-06-29T16:26:45.6190606Z",
+  "log_url": "https://myapache.scm.azurewebsites.net/api/deployments/latest/log",
+  "message": "Created via a push deployment",
+  "progress": "",
+  "received_time": "2023-06-29T16:26:39.3273273Z",
+  "site_name": "myapache",
+  "start_time": "2023-06-29T16:26:40.8019055Z",
+  "status": 4,
+  "status_text": "",
+  "url": "https://myapache.scm.azurewebsites.net/api/deployments/latest"
+}
+
+
+
 ```
 
 
