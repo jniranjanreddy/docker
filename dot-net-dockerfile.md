@@ -64,6 +64,9 @@ az webapp deployment source config-zip \
     --name <your-app-name>
 ```
 
+
+
+## Simple Dockerfile.
 ```
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
 RUN mkdir app
