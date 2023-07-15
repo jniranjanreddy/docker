@@ -11,4 +11,4 @@ receivers:
         auth_username: 'notifications@jnrlabs.com'
         auth_password: "password"
         from: 'devops-notify@jnrlabs.com'
-        to: 'gen-njannapureddy@jnrlabs.com'
+        to: 'niranjan@jnrlabs.com'
