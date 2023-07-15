@@ -1,0 +1,14 @@
+route:
+  receiver: 'mail'
+  repeat_interval: 4h
+  group_by: [ alertname ]
+
+
+receivers:
+  - name: 'mail'
+    email_configs:
+      - smarthost: 'smtp.office365.com:587'
+        auth_username: 'notifications@gestaltdiagnostics.com'
+        auth_password: "Sop15399"
+        from: 'devops-notify@gestaltdiagnostics.com'
+        to: 'gen-njannapureddy@gestaltdiagnostics.com'

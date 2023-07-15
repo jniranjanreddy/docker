@@ -1,0 +1,14 @@
+route:
+  receiver: 'mail'
+  repeat_interval: 4h
+  group_by: [ alertname ]
+
+
+receivers:
+  - name: 'mail'
+    email_configs:
+      - smarthost: 'smtp.office365.com:587'
+        auth_username: 'notifications@jnrlabs.com'
+        auth_password: "password"
+        from: 'devops-notify@jnrlabs.com'
+        to: 'gen-njannapureddy@jnrlabs.com'
