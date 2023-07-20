@@ -105,6 +105,12 @@ A specific build from a multistage build..
 ```
 
 ## install docker-compose for ubuntu 20
+```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
+```
+## Docker-compose Release
+```
+https://github.com/docker/compose/releases/
+```
