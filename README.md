@@ -128,3 +128,4 @@ ExecStop=/usr/bin/docker compose down
 [Install]
 WantedBy=multi-user.target
 ```
+<img width="800" height="977" alt="image" src="https://github.com/user-attachments/assets/53fd7362-3e60-4898-b734-da8d17ca16eb" />
